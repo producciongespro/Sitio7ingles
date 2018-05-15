@@ -6,27 +6,23 @@
 
 body {
   padding-top: 54px;
-  background-color: #000000;
-}
+  background-color: #000000;}
 
 @media (min-width: 992px) {
-  body {    padding-top: 56px;}
-}
+  body {    padding-top: 56px;}}
 
 .portfolio-item {
-  margin-bottom: 30px;
-}
+  margin-bottom: 30px;}
 
 .pagination {
-  margin-bottom: 30px;
-}
+  margin-bottom: 30px;}
 
-#tablas {
-  background-color: #F7FE2E;
-}
+/* css de la hoja de créditos */
+#creditoPrincip {color:#FF0040;font-size: 20px;  font-family: "Arial", serif;}
+#creditoSecundar {color:#F7FE2E;font-size: 17px;  font-family: "Arial", serif;}
+#creditoInf {color:#ffffff;font-size: 14px; font-family: "Arial", serif;}
 
-p {color:#ffffff;}
-
+/* Textos en general */
 h4  {color: #FF0040;}
 h1 {color: #FE2E64;}
 h2 {color: #F7FE2E;}
@@ -34,12 +30,13 @@ h3 {color: #FF0040;}
 h5 {text-decoration: underline;}
 .intro {color:#FFFFFF;}
 
-#nav-lonk {color: #FF0040;}
-.navbar navbar-expand-lg navbar-dark bg-dark fixed-top {background-color: #F6CED8;}
-.modal-header {background-color: #b63776;}
 
+.card-text { font-weight: 700; }
+
+.modal-header {background-color: #b63776;}
 .card {background-color: #F6CED8;}
 
-#imagen_deco {width: 1200px; height:100px;}
 
+
+#imagen_deco {width: 1200px; height:100px;}
 #logo {width: 70px; height: 55px;}

@@ -13,7 +13,6 @@ $(document).ready(function () {
 	});
 	//Evento clic a toda la clase nav link
 	$(".nav-link").click(function () {
-
 		ReproducirEfecto()
 	})
 })
@@ -44,11 +43,9 @@ console.log(opcion);
 
 // ****************************************
 
-function ReproducirEfecto() {
-
-	 document.getElementById("audioEfecto").play();
-	 document.getElementById("audioEfecto").pause();
-	 document.getElementById("audioEfecto").currentTime = 0;
-
-	 console.log( document.getElementById("audioEfecto"));
-}
+// function ReproducirEfecto() {
+// 	 document.getElementById("audioEfecto").play();
+// 	 document.getElementById("audioEfecto").pause();
+// 	 document.getElementById("audioEfecto").currentTime = 0;
+// 	 console.log( document.getElementById("audioEfecto"));
+// }
