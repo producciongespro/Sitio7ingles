@@ -9,12 +9,13 @@ $(document).ready(function () {
 	$(".card-img-top").click(function () {
 		// Cargar el video en el MODAL
 		// EVENTO QUELO LLAMA AL METODO
+
 			cargarMedio(this);
 	});
 	//Evento clic a toda la clase nav link
-	$(".nav-link").click(function () {
-
-		ReproducirEfecto()
+	$(".nav-link").click(function (event) {
+		event.preventDefault();
+		ReproducirEfecto(this)
 	})
 })
 
@@ -44,11 +45,14 @@ console.log(opcion);
 
 // ****************************************
 
-function ReproducirEfecto() {
+function ReproducirEfecto(item) {
+var objAudio = document.getElementById("audioEfecto"), pagina = $(item).attr("pagina");
+console.log(pagina);
+	objAudio.currentTime = 0;
+	objAudio.play();
+	// console.log(objAudio);
+	setTimeout(function () {
+		window.location=pagina;
+	}, 1000);
 
-	 document.getElementById("audioEfecto").play();
-	 document.getElementById("audioEfecto").pause();
-	 document.getElementById("audioEfecto").currentTime = 0;
-
-	 console.log( document.getElementById("audioEfecto"));
 }
